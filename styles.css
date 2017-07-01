@@ -1,0 +1,21 @@
+body {
+	background-image: url("stadium.jpg");
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	min-height: 100vh;
+}
+
+.row {
+	width: 100%;
+	background-color: grey;
+	align-self: center;
+}
+
+.page-footer {
+	align-self: flex-end;
+}
+
+/*#black {
+	width: 100%;
+}*/
