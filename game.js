@@ -51,6 +51,16 @@ if (talentFirstChoice === "loan") {
 // stopped here - need to build this out
 }
 
+// added random numnber generator to determine loan result
+var randomNumber = Math.ceil(Math.random() * 100)
+if (randomNumber >= 90) {
+  playerProfile.statusAfterLoan = "injured";
+} else if (randomNumber < 90 && randomNumber >= 45) {
+  playerProfile.statusAfterLoan = "improved"
+} else if (randomNumber < 45) {
+  playerProfile.statusAfterLoan = "got worse"
+}
+
 var playerProfile = {
     position: talent,
     firstChoice: talentFirstChoice,
