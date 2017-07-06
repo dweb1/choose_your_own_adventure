@@ -28,7 +28,7 @@ if (firstQuestion === "Africa") {
 }
   
 if (talent === "AMF") {
-    var talentFirstChoice = prompt("Great choice, boss! We could use some more creativity up front. First order of business is determining whether we want to develop him in-house or send him out for a few years on loan. There are positives and drawbacks to either way, but it's ultimately up to you, Coach" + userName +". What do you say: loan or keep?");
+    var talentFirstChoice = prompt("Great choice, boss! We could use some more creativity up front. First order of business is determining whether we want to develop him in-house or send him out for a few years on loan. There are positives and drawbacks to either way, but it's ultimately up to you, Coach " + userName +". What do you say: loan or keep?");
 } else if (talent === "GK") {
     var talentFirstChoice = prompt("I always say that you should build from the back, first and foremost! First order of business is determining whether we want to develop him in-house or send him out for a few years on loan. There are positives and drawbacks to either way, but it's ultimately up to you, Coach" + userName +". What'll it be: loan or keep?")
 } else if (talent === "CMF") {
@@ -44,3 +44,18 @@ if (talent === "AMF") {
 } else if (talent === "SS") {
     var talentFirstChoice = prompt("Assists and goals - this guy will do it all! First order of business is determining whether we want to develop him in-house or send him out for a few years on loan. There are positives and drawbacks to either way, but it's ultimately up to you, Coach " + userName +". What do you say: loan or keep?")
 }
+
+if (talentFirstChoice === "loan") {
+    var yearsOnLoan = prompt("Between 1 and 3 years, how many years would you like to send the youngster out on loan for?")
+} else if (talentFirstChoice === "keep") {
+// stopped here - need to build this out
+}
+
+var playerProfile = {
+    position: talent,
+    firstChoice: talentFirstChoice,
+    yearsOnLoan: yearsOnLoan,
+    
+}
+
+console.log(playerProfile);
